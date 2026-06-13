@@ -1,0 +1,263 @@
+*{
+    box-sizing:border-box;
+}
+
+
+body{
+
+    margin:0;
+    min-height:100vh;
+
+    background:linear-gradient(135deg,#56c6ef,#292931);
+
+    font-family:'Segoe UI',Arial,sans-serif;
+
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+
+
+/* main card */
+
+.container{
+
+    width:80%;
+    max-width:850px;
+
+    background:rgba(41,41,49,0.95);
+
+    padding:45px;
+
+    border-radius:30px;
+
+    box-shadow:
+    0 0 25px rgba(0,238,255,0.5);
+
+    animation:show 0.8s ease;
+
+}
+
+
+
+/* header */
+
+.header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.logo{
+
+    font-size:28px;
+
+    color:#56c6ef;
+
+}
+
+
+
+.navbar a{
+
+    text-decoration:none;
+
+    color:white;
+
+    margin-left:25px;
+
+    font-size:17px;
+
+    transition:0.3s;
+
+}
+
+
+.navbar a:hover{
+
+    color:#56c6ef;
+
+}
+
+
+
+/* content */
+
+h4{
+
+    font-size:22px;
+
+    margin-bottom:10px;
+
+}
+
+
+h1{
+
+    font-size:45px;
+
+    margin:10px 0;
+
+    color:#56c6ef;
+
+}
+
+
+
+h3{
+
+    font-size:25px;
+
+}
+
+
+
+p{
+
+    font-size:18px;
+
+    line-height:1.6;
+
+    color:#ddd;
+
+}
+
+
+
+/* button */
+
+
+.btn{
+
+    margin-top:25px;
+
+    padding:14px 35px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#56c6ef;
+
+    color:#292931;
+
+    font-weight:bold;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+
+
+.btn:hover{
+
+    transform:scale(1.1);
+
+    box-shadow:0 0 20px #56c6ef;
+
+}
+
+
+
+/* about page */
+
+
+.container h1{
+
+    text-align:center;
+
+}
+
+
+.container p{
+
+    text-align:center;
+
+}
+
+
+
+
+/* animation */
+
+@keyframes show{
+
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+
+}
+
+
+
+/* mobile */
+
+
+@media(max-width:700px){
+
+
+.container{
+
+    width:90%;
+
+    padding:25px;
+
+}
+
+
+
+.header{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+
+.navbar a{
+
+    margin:10px;
+
+}
+
+
+h1{
+
+    font-size:35px;
+
+}
+
+
+}
